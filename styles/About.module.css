@@ -1,0 +1,140 @@
+.aboutImg {
+  position: relative;
+}
+
+.aboutArea{
+  padding-bottom: 50px;
+}
+
+.aboutImg:after, .aboutImg:before {
+  content: "";
+  position: absolute;
+  height: 65%;
+  width: 15px;
+  background: rgba(146,161,207,.6);
+}
+
+.aboutImg:before {
+  left: 0;
+  top: 0;
+}
+
+.aboutImg:after {
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+}
+
+.colorTheme {
+  color: #92A1CF;
+}
+
+.aboutImg img{
+width: 100%;
+height:400px;
+}
+
+
+.aboutContent ul li {
+  list-style: none;
+  display: flex;
+}
+
+.aboutContent ul li:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.aboutContent ul li b {
+  min-width: 120px;
+  display: inline-block;
+  position: relative;
+  margin-right: 7px;
+}
+
+.aboutContent ul li b:after {
+  content: ":";
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+}
+
+
+
+.btnStyle{
+  position: relative;
+  padding: 0 30px;
+  background: #92A1CF;
+  color: #fff;
+  border: 0;
+  display: inline-block;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  height: 50px;
+  line-height: 50px;
+margin-top: 15px;
+transition: all .4s ease-out;
+}
+
+.btnStyle:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+transition: all .4s ease-out;
+}
+
+.btnStyle:hover {
+  color: #fff;
+}
+
+.btnStyle:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.techContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  margin-top: 30;
+}
+
+.techContainer li {
+  display:inline-block;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.stack{
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 767px){
+  .aboutContent{
+      margin-top:20px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+  .aboutContent{
+      margin-top:20px;
+
+  }
+}

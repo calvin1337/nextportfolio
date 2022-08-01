@@ -1,0 +1,122 @@
+.portfolioImg img{
+  height:400px;
+  width:100%;
+ }
+
+ 
+
+.portfolioSingle h5 {
+   color: #fff;
+   margin-top: 15px;
+   margin-bottom: 0;
+   font-weight: 700;
+   margin-left:4px;
+
+}
+
+.portfolioSingle h6 {
+   color: #a4acc4;
+   margin-left:4px;
+
+   margin-bottom: 0;
+}
+
+
+.portfolioSingle{
+   background: #191d2b;
+       padding: 15px;
+       width:100% ;
+   }
+
+
+.tag{
+   align-self: center;
+   display: inline-block;
+   padding: 5px 10px;
+   margin: 4px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: white;
+   font-size: 12px;
+   background-color: #2e344e;
+}
+
+
+.tagContainer{
+ margin-top:10px;
+ height: 40%;
+   display: flex;
+}
+
+.typeTag{
+   align-self: center;
+   display: inline-block;
+   padding: 5px 10px;
+   margin: 4px;
+   border-radius: 5px;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: #2e344e;
+   font-size: 16px;
+   background-color: #92A1CF;
+}
+
+.typeContainer{
+   display:flex;
+   justify-content: space-between;
+   align-items: center    ;
+}
+
+.gitLink a{
+   margin-right:5px;
+   color: #92A1CF;
+}
+
+.gitLink a:hover {
+   color: #007bff;
+   transition: all 0.5s ease-out;
+}
+
+.btnStyle{
+  position: relative;
+  padding: 0 30px;
+  background: #92A1CF;
+  color: #fff;
+  border: 0;
+  display: inline-block;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  height: 50px;
+  line-height: 50px;
+margin-top: 15px;
+transition: all .4s ease-out;
+}
+
+.btnStyle:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+transition: all .4s ease-out;
+}
+
+.btnStyle:hover {
+  color: #fff;
+}
+
+.btnStyle:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}

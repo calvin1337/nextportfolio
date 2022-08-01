@@ -1,0 +1,131 @@
+.contactInfo {
+  margin-top: -30px;
+  
+}
+.contactArea{
+  padding-bottom: 50px;
+}
+.contactInfoBlock {
+  margin-top: 30px;
+  background: #191d2b;
+  padding: 30px;
+  display: flex;
+}
+
+.contactIcon {
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  flex: 0 0 70px;
+  max-width: 70px;
+  border: 1px solid #2e344e;
+  text-align: center;
+  line-height: 66px;
+  margin-right: 20px;
+}
+
+.contactInfoBlock h6 {
+  margin-top: -5px;  
+  display:block;
+}
+
+
+
+.contactSocial {
+  display:flex;
+  flex-direction:column
+}
+
+.formField {
+  margin-top: 30px;
+  position: relative;
+}
+
+.formField label {
+  position: absolute;
+  left: 15px;
+  top: -13px;
+  background: #10121b;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  pointer-events: none;
+  padding: 0 10px;
+  font-size: .94rem;
+}
+
+.formField input, .formField textarea {
+  border: 1px solid #2e344e;
+  font-size: 1rem;
+}
+
+
+.contactArea{
+padding-bottom:120px
+}
+.btnStyle{
+  position: relative;
+  padding: 0 30px;
+  background: #92A1CF;
+  color: #fff;
+  border: 0;
+  display: inline-block;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  height: 50px;
+  line-height: 50px;
+margin-top: 15px;
+transition: all .4s ease-out;
+}
+
+.btnStyle:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+  z-index: -1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+transition: all .4s ease-out;
+}
+
+.btnStyle:hover {
+  color: #fff;
+}
+
+.btnStyle:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+@media only screen and (max-width: 767px){
+  .contactInfoBlock p {
+      font-size:15px;
+  }
+
+  .contactInfo{
+      margin-top:0 !important;
+   }
+
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+  .contactInfo{
+      margin-top:0 !important;
+
+  }
+}
+
+@media only screen and (max-width:400px){
+  .contactIcon{
+      display:none;
+  }
+}

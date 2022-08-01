@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    line-height: 1.8rem;
+    font-family: "Nunito", sans-serif;
+    color:#a4acc4;
+    font-weight: 400;
+    background-color: #10121b;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Nunito,sans-serif;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a:active, a:focus, a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.mt-30-reverse {
+    margin-top: -30px;
+}
+
+.mt-30{
+    margin-top:30px;
+}
+
+h5 {
+    font-size: 1.43rem;
+    line-height: 2.14rem;
+}
+
+h6 {
+    font-size: 1.14rem;
+    line-height: 1.857rem;
+}
+
+.contentSection{
+    position:relative;
+    padding-top:120px
+  }
+
+  .padding-bottom-120{
+      padding-bottom: 120px;
+  }
+
+
+
+  .sectionTitle {
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.sectionTitle h2 {
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 2.57rem;
+    line-height: 3.2857rem;
+    font-family: Nunito,sans-serif;
+    color: #fff;
+
+}
+
+
+.sectionTitle h2:before {
+    width: 100px;
+    background: rgba(3,127,255,.3);
+}
+
+.sectionTitle h2:after {
+    width: 35px;
+    background: #92A1CF;
+}
+
+.sectionTitle h2:after, .sectionTitle h2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    height: 5px;
+    border-radius: 100px;
+}
+
+.sectionTitle span {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 900;
+    color: rgba(25,29,43,.44);
+    display: inline-block;
+    text-transform: uppercase;
+    z-index: -1;
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+}
+
+
+.blogDetails img {
+    margin-bottom: 15px;
+    max-width:100%;
+    width:100%;
+    height:625px;
+}
+
+.social li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .social li a {
+      color: white;
+      text-decoration: none;
+      font-family: FontAwesome;
+      text-align: center;
+      margin-top: 1rem;
+      text-decoration: none !important;
+  }
+  
+  
+  .social li a:hover {
+      color: #92A1CF;
+      transition: all 0.5s ease-out;
+  }
+
+
+  input{
+    height: 50px;
+    padding: 0 15px;
+    width: 100%;
+    vertical-align: middle;
+      
+    }
+
+    h6 {
+        font-size: 1.14rem;
+        line-height: 1.857rem;
+      }
+    
+    input, textarea{
+    border: 1px solid #2e344e;
+    font-family: Nunito,sans-serif;
+    color: #a4acc4;
+      background: transparent;
+    
+    }
+    
+    textarea{    
+    padding: 10px 15px;
+      width: 100%;
+    
+    }
+    
+
+
+
+@media only screen and (max-width: 1599px) and (min-width: 1200px) {
+    .bgLines {
+      left: 260px;
+      width: calc(100% - 260px);
+  }
+
+  .sectionTitle span {
+    font-size: 4.5rem !important;
+}
+
+  }
+
+  @media only screen and (min-width: 992px) and (max-width:1199px) {
+
+      .sectionTitle span {
+        font-size: 4.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width:991px){
+
+    .sectionTitle span {
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 2.37rem;
+        line-height: 3.0857rem;
+    }
+  }
+
+  @media only screen and (max-width: 767px){
+   
+
+    .sectionTitle span {
+        font-size: 3.8rem;
+    }
+
+    h2 {
+        font-size: 2.17rem;
+        line-height: 2.857rem;
+    }
+  }
+
+button{
+  border: 1px solid #2e344e;
+    font-family: Nunito,sans-serif;
+    color: #a4acc4;
+  }
+  
+  span{
+    display: inline-block;
+  }
+
+  
+  img {
+    max-width: 100%;
+  }
+
+  a:hover{
+    text-decoration:none;
+    }
+
+    ul {
+        list-style:none;
+        }
+        
