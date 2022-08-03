@@ -1,5 +1,4 @@
 import { Container, Row, Col } from "react-bootstrap";
-import styles from "../styles/Contact.module.css";
 import {faPhone,faEnvelope,faUsers} from "@fortawesome/free-solid-svg-icons";
 import Form from "../components/Contact/Form"
 import ContactContent from "../components/Contact/ContactContent"
@@ -8,7 +7,7 @@ import ContactSocial from "../components/Contact/ContactSocial"
 
 const contact = () => {
   return(
-    <main className="contactArea contentSection">
+    <main className="contactArea contentSection" style={{paddingBottom: "100px"}}>
       <Container>
         <div className="sectionTitle">
           <h2>Contact Me</h2>
