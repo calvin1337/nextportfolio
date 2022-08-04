@@ -29,7 +29,7 @@ const Form = () => {
             ></textarea>
           </div>
           <div className={styles.formField}>
-            <button className="btnStyle" type="submit">
+            <button className={styles.btnStyle} type="submit">
               Send Mail
             </button>
           </div>
