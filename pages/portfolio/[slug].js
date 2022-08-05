@@ -20,6 +20,9 @@ const QUERY = gql`
         tags,
         coverPhoto{
           url
+        },
+        images{
+          url
         }
     }
   }
@@ -66,7 +69,7 @@ const PortfolioContent = ({project}) => {
   <div className="blogDetails contentSection padding-bottom-120">
       <Container>
           <div>
-          <Carousel />
+          <Carousel images={project.images}/>
           </div>
           <h3>{project.title}</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis vero deleniti blanditiis inventore, quae culpa veniam est nam obcaecati qui quidem itaque aspernatur fugit reiciendis rerum! Deleniti, asperiores harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dicta? Consectetur itaque ipsam facilis sequi quisquam dolor, sunt unde quam.</p>
