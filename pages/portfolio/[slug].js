@@ -1,5 +1,6 @@
 import {Container} from "react-bootstrap";
 import { GraphQLClient, gql } from "graphql-request";
+import Carousel from "../../components/Portfolio/Carousel";
 
 
 const graphcms = new GraphQLClient(
@@ -64,9 +65,9 @@ const PortfolioContent = ({project}) => {
   return (
   <div className="blogDetails contentSection padding-bottom-120">
       <Container>
-          <p>
-          <img src={project.coverPhoto.url} alt="" />
-          </p>
+          <div>
+          <Carousel />
+          </div>
           <h3>{project.title}</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid veritatis vero deleniti blanditiis inventore, quae culpa veniam est nam obcaecati qui quidem itaque aspernatur fugit reiciendis rerum! Deleniti, asperiores harum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dicta? Consectetur itaque ipsam facilis sequi quisquam dolor, sunt unde quam.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo molestiae aliquid voluptatibus repellendus vel enim repellat natus consequatur quam inventore.</p>
