@@ -6,7 +6,13 @@ const Form = () => {
     <Col lg="6">
       <div className={styles.contactFormWrapper}>
         <h4>Get In Touch</h4>
-        <form name="contact" className={styles.contactForm}>
+        <form  className={styles.contactForm} netlify 
+            name="contact"
+            method="POST" 
+            data-netlify="true" 
+            netlify-honeypot="bot-field"
+            action="/contact"
+            >
           <div className={styles.formField}>
             <label htmlFor="name">Enter Your Name</label>
             <input type="text" name="name" id="contact-form-name" />

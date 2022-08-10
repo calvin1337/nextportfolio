@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 
 const PortfolioCarousel = ({images}) => {
-  console.log(images)
+  
   return (
     <Carousel fade variant="dark" >
       {
